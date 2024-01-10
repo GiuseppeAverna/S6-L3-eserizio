@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: linear-gradient(50deg,salmon,orange 50%,purple);
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        li {
+            padding: 10px
+        }
+
+    }
+    div{
+        display: flex;
+    
+    &:nth-of-type(2) {
+        
+        button {
+            margin: 2px;
+            border-radius: 10%;
+            background-color: red;
+            border: 1px solid orangered;
+            color: white;
+            
+        }
+        
+        
+    }
+}
+}
+table {
+    border: 3px solid orangered;
+    img{
+        width: 100px;
+        height: 100px;
+        
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-600px);
+        opacity: 100%;
+    }
+    
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+        
+
+    }
+
+}
+
+.navobj {
+    animation: appear 1s linear forwards 0.3s;
+    opacity: 0;
+}
+
